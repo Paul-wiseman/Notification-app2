@@ -5,6 +5,8 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -33,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         val notifiaction = NotificationCompat.Builder(this, CHANNEL_ID)
         .setContentTitle("Do you want to be a millionair?")
         .setContentText("Millionairs Club")
+        .setLargeIcon(BitmapFactory.decodeResource(this.resources,R.drawable.ic_baseline_cruelty_free_24))
+                .
         .setSmallIcon(R.drawable.ic_baseline_campaign_24)
         .setPriority(NotificationCompat.PRIORITY_HIGH)
         .setTicker(notificationTicker)
