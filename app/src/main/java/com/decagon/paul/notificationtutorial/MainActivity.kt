@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
         .setContentTitle("Do you want to be a millionair?")
         .setContentText("Millionairs Club")
         .setLargeIcon(BitmapFactory.decodeResource(this.resources,R.drawable.ic_baseline_cruelty_free_24))
-                .
         .setSmallIcon(R.drawable.ic_baseline_campaign_24)
         .setPriority(NotificationCompat.PRIORITY_HIGH)
         .setTicker(notificationTicker)
